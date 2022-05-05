@@ -74,4 +74,4 @@ You can visit spped match webgame through this link.
   - Refactor whole code with typescript
 
 - LEE
-  - Implement interaction(typing component) with javascript
+  - Implement interaction(typing component, connection with display component) with javascript

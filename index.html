@@ -7,13 +7,13 @@
     <link rel="shortcut icon" type="image/x-icon" href="./src/favicon.ico" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>SURVIVE</title>
+    <title>All you need is speed</title>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">SURVIVE IF YOU CAN</a>
+              <a class="navbar-brand" href="#">GOOD LUCK</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -35,21 +35,21 @@
         <div id="info-container">
             <div id="status-container" style="display: none;">
                 <div id="status-display">
-                    <!-- score 출력창 -->
+                    <!-- score display component -->
                     <div class="card border-success mb-3" style="max-width: 10rem;">
                         <div class="card-header">score</div>
                         <div class="card-body">
-                            <h4 id="status" class="card-title">alive</h4>
+                            <h4 id="game-status" class="card-title">alive</h4>
                         </div>
                     </div>
-                    <!-- level 출력창 -->
+                    <!-- level display component -->
                     <div class="card border-danger mb-3" style="max-width: 10rem;">
                         <div class="card-header">level</div>
                         <div class="card-body">
                             <h4 id="level" class="card-title">level 2</h4>
                         </div>
                     </div>
-                    <!-- 남은 시간 출력창 -->
+                    <!-- remaining time display component -->
                     <div class="card border-warning mb-3" style="max-width: 5rem;">
                         <div class="card-header">time</div>
                         <div class="card-body">
@@ -57,7 +57,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- pattern 출력창 -->
+                <!-- pattern display component -->
                 <div id="pattern-display" class="card border-secondary mb-3" style="max-width: 60rem;">
                     <div class="card-header">pattern</div>
                     <div class="card-body">
@@ -70,23 +70,23 @@
         </div>
         <div id="game-play" style="display: none;">
             <div id="top">
-                <!-- 방향키 up -->
+                <!-- keyboard up -->
                 <button type="button" id="up" class="btn btn-outline-danger">U</button>
             </div>
             <div id="middle">
-                <!-- 방향키 left -->
+                <!-- keyboard left -->
                 <button type="button" id="left" class="btn btn-outline-success">L</button>
-                <!-- 방향키 center -->
+                <!-- keyboard space -->
                 <button type="button" id="center" class="btn btn-outline-secondary">C</button>
-                <!-- 방향키 right -->
+                <!-- keyboard right -->
                 <button type="button" id="right" class="btn btn-outline-warning">R</button>
             </div>
             <div id="bottom">
-                <!-- 방향키 down -->
+                <!-- keyboard down -->
                 <button type="button" id="down" class="btn btn-outline-info">D</button>
             </div>
         </div>
     </main>
-    <script src="js/main.js"></script>
+    <script src="ts/index.js"></script>
 </body>
 </html>

@@ -34,3 +34,7 @@
 #input-nickname {
     margin: 10px;
 }
+
+.correct-ans {
+    color: #00d9ff;
+}
