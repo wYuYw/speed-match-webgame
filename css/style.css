@@ -1,0 +1,36 @@
+#info-container {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#status-display {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#status-display > * {
+    margin: 0px 25px;
+}
+
+#pattern-display {
+    margin: 25px 0px;
+}
+
+#game-play {
+    padding: 50px 100px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-play button {
+    margin: 5px;
+}
+
+#input-nickname {
+    margin: 10px;
+}

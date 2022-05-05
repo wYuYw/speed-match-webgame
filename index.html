@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="./src/favicon.ico" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>SURVIVE</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">SURVIVE IF YOU CAN</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./index.html">Play Game</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="ranking-btn" class="nav-link" href="./ranking.html">Ranking</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div id="info-container">
+            <div id="status-container" style="display: none;">
+                <div id="status-display">
+                    <!-- score 출력창 -->
+                    <div class="card border-success mb-3" style="max-width: 10rem;">
+                        <div class="card-header">score</div>
+                        <div class="card-body">
+                            <h4 id="status" class="card-title">alive</h4>
+                        </div>
+                    </div>
+                    <!-- level 출력창 -->
+                    <div class="card border-danger mb-3" style="max-width: 10rem;">
+                        <div class="card-header">level</div>
+                        <div class="card-body">
+                            <h4 id="level" class="card-title">level 2</h4>
+                        </div>
+                    </div>
+                    <!-- 남은 시간 출력창 -->
+                    <div class="card border-warning mb-3" style="max-width: 5rem;">
+                        <div class="card-header">time</div>
+                        <div class="card-body">
+                            <h4 id="time" class="card-title">10s</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- pattern 출력창 -->
+                <div id="pattern-display" class="card border-secondary mb-3" style="max-width: 60rem;">
+                    <div class="card-header">pattern</div>
+                    <div class="card-body">
+                        <h2 id="pattern" class="card-title">^ < > < < c v</h2>
+                    </div>
+                </div>
+            </div>
+            <button id="start-retry-button" type="button" class="btn btn-primary btn-lg" style="display: inline;">START</button>
+            <input type="text" id="nickname" placeholder="Write your nickname" onkeyup='getNickname()'/>
+        </div>
+        <div id="game-play" style="display: none;">
+            <div id="top">
+                <!-- 방향키 up -->
+                <button type="button" id="up" class="btn btn-outline-danger">U</button>
+            </div>
+            <div id="middle">
+                <!-- 방향키 left -->
+                <button type="button" id="left" class="btn btn-outline-success">L</button>
+                <!-- 방향키 center -->
+                <button type="button" id="center" class="btn btn-outline-secondary">C</button>
+                <!-- 방향키 right -->
+                <button type="button" id="right" class="btn btn-outline-warning">R</button>
+            </div>
+            <div id="bottom">
+                <!-- 방향키 down -->
+                <button type="button" id="down" class="btn btn-outline-info">D</button>
+            </div>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
