@@ -73,5 +73,5 @@ You can visit spped match webgame through this link.
   - Implement Storage function with javascript
   - Refactor whole code with typescript
 
-- LEE
+- [hyunklee](https://github.com/hyunklee)
   - Implement interaction(typing component, connection with display component) with javascript
